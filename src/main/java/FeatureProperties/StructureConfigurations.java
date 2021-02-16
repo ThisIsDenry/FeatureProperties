@@ -1,7 +1,7 @@
 package FeatureProperties;
 
 public class StructureConfigurations {
-    enum BeachShipwreckType
+    public enum BeachShipwreckType
     {
         WITH_MAST(0),
         SIDEWAYS_FULL(1),
@@ -22,7 +22,7 @@ public class StructureConfigurations {
         }
     }
 
-    enum OceanShipwreckType
+    public enum OceanShipwreckType
     {
         WITH_MAST(0),
         UPSIDEDOWN_FULL(1),
@@ -52,7 +52,7 @@ public class StructureConfigurations {
         }
     }
 
-    enum BastionRemnantType
+    public enum BastionRemnantType
     {
         HOUSING(0),
         STABLES(1),
@@ -64,5 +64,49 @@ public class StructureConfigurations {
         private BastionRemnantType(int index) {
             this.index = index;
         }
+    }
+
+    public enum RuinedPortalType
+    {
+
+        PORTAL_1(1),
+        PORTAL_2(2),
+        PORTAL_3(3),
+        PORTAL_4(4),
+        PORTAL_5(5),
+        PORTAL_6(6),
+        PORTAL_7(7),
+        PORTAL_8(8),
+        PORTAL_9(9),
+        PORTAL_10(10);
+
+        public final int index;
+
+        private RuinedPortalType(int index) {
+            this.index = index;
+        }
+    }
+
+    public enum GiantRuinedPortalType
+    {
+        GIANT_PORTAL_1(1),
+        GIANT_PORTAL_2(2),
+        GIANT_PORTAL_3(3);
+
+        public final int index;
+
+        private GiantRuinedPortalType(int index) {
+            this.index = index;
+        }
+    }
+
+    public enum RuinedPortalVerticalPlacement
+    {
+        PARTLY_BURIED,
+        ON_LAND_SURFACE,
+        ON_OCEAN_FLOOR,
+        IN_MOUNTAIN,
+        IN_NETHER,
+        UNDERGROUND;
     }
 }
